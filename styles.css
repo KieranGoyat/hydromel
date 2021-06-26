@@ -6,14 +6,23 @@
 
 :root {
     --menu-bg-color: rgb(31, 31, 31);
-    --summary-link-color: palevioletred;
+    --accentuated-color: #ff7878;
 }
+
+@font-face {
+    font-family: 'Heorot';
+    src: url(/media/fonts/Heorot-Regular.ttf);
+}
+
+
 
 body {
     background-color: green;
 
     width: 100vw;
     height: 100vh;
+
+    overflow: hidden;
 
     display: flex;
     flex-direction: row;
@@ -27,10 +36,31 @@ nav {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 
     position: relative;
+}
+
+#home_container {
+    position: absolute;
+    top: 40px;
+}
+
+#icon_accueil {
+    fill: white;
+    width: 30px;
+}
+
+#menu {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-decoration: line-through var(--accentuated-color) 2px;
+    transform: rotate(270deg);
+
+    position: absolute;
+    top: 100px;
 }
 
 #summary {
@@ -54,9 +84,9 @@ nav {
 .summary_chapter_link::before, .summary_subchapter_link::before {
     content: '';
     display: block;
-    background-color: var(--summary-link-color);
+    background-color: var(--accentuated-color);
 
-    border: 4px solid var(--menu-bg-color);
+    border: 5px solid var(--menu-bg-color);
     border-radius: 50%;
 
     transition: 0.2s;
@@ -64,22 +94,36 @@ nav {
 
 .summary_chapter_link::before {
     margin: 6px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .summary_subchapter_link::before {
     margin: 4px;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 
 .summary_chapter_link:hover::before, 
+.summary_chapter_link.active::before {
+    background-color: white;
+    outline: 2px solid white;
+
+    margin: 4px;
+
+    width: 24px;
+    height: 24px;
+}
+
 .summary_subchapter_link:hover::before,
-.summary_chapter_link.active::before, 
 .summary_subchapter_link.active::before {
     background-color: white;
     outline: 2px solid white;
+
+    margin: 3px;
+
+    width: 16px;
+    height: 16px;
 }
 
 .chapter_label_container {
@@ -96,14 +140,12 @@ nav {
 
 .chapter_label:hover,
 .summary_chapter_link:hover .chapter_label,
-.summary_subchapter_link:hover .chapter_label {
+.summary_subchapter_link:hover .subchapter_label {
     left: 100%;
 }
 
-.chapter_label {
+.chapter_label, .subchapter_label {
     background-color: var(--menu-bg-color);
-
-    display: inline-block;
 
     position: relative;
     left: 0%;
@@ -115,12 +157,47 @@ nav {
     transition: 0.5s;
 }
 
+.chapter_label {
+    display: inline-block;
+}
+
+.subchapter_label {
+    display: inline-flex;
+    align-items: center;
+}
+
 .chapter_name {
-    color: gray;
+    color: #d3d3d3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .chapter_title{
     color: white;
+    font-family: 'Heorot', 'Enriqueta', serif;
+    font-size: 18px;
+}
+
+.subchapter_name {
+    color: #d3d3d3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+
+    margin-right: 10px;
+}
+
+.subchapter_title{
+    color: white;
+    font-family: 'Enriqueta', serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#mjod_container {
+    position: absolute;
+    bottom: 50px;
 }
 
 
