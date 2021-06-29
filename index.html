@@ -25,7 +25,7 @@
         <div id="summary">
 
             <!-- Chapter 1 -->
-            <a href="#" class="summary_chapter_link">
+            <a href="#" class="summary_chapter_link active">
                 <div class="chapter_label_container">
                     <div class="chapter_label">
                         <p class="chapter_name">Chapitre 1</p>
@@ -142,14 +142,33 @@
 
     <main>
 
-        <div class="background" style="background-image: url('/media/images/intro_chap_01/background.png');"></div>
+        <div class="background layer" style="background-image: url('/media/images/intro_chap_01/background.png');"></div>
 
-        <div class="shadow"></div>
+        <div class="image_container layer">
+            <img id="chap01_freya" src="/media/images/intro_chap_01/freya.png" alt="Freya"
+                data-parallax-y="-5">
+            <img id="chap01_odin" src="/media/images/intro_chap_01/odin.png" alt="Odin"
+                data-parallax-y="5">
+            <img id="chap01_dragon" src="/media/images/intro_chap_01/dragon_motif.png" alt="Dragon"
+                data-parallax-x="20"
+                data-parallax-y="20">
+        </div>
 
-        <!--<img src="/media/images/intro_chap_01/shadow.png" alt="shadow" class="shadow">-->
+        <div class="shadow layer"></div>
 
+        <div class="image_container layer">
+            <img id="chap01_kvasir" src="/media/images/intro_chap_01/kvasir.png" alt="Kvasir"
+                data-parallax-x="10">
+        </div>
+
+        <div class="title layer">
+            <p class="title_number">CHAPITRE 1</p>
+            <p class="title_name">LA NAISSANCE</br> DE KVASIR</p>
+        </div>
 
     </main>
+
+    <script src="/JS/parallax.js"></script>
     
 </body>
 </html>

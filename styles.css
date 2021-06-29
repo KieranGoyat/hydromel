@@ -202,36 +202,94 @@ nav {
 
 
 main {
-    background-color: white;
-
     position: relative;
 
     height: 100%;
     flex: 1;
+
+    z-index: -1;
 }
 
-.background {
+.layer {
     position: absolute;
     top: 0;
     left: 0;
 
     width: 100%;
     height: 100%;
+}
 
+.background {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
     opacity: 0.3;
-
     background: radial-gradient(transparent 70%, black);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-40px);
+}
+
+.title_number {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title_name {
+    color: white;
+    font-size: 102px;
+    font-weight: 400;
+    font-family: 'Heorot', 'Enriqueta', serif;
+    text-align: center;
+}
+
+img[data-parallax-x],
+img[data-parallax-y] {
+    transition: 3s;
+    transition-timing-function: cubic-bezier(.04,.69,.34,.93);
+}
+
+#chap01_kvasir {
+    height: 33%;
+
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+#chap01_freya {
+    height: 70%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#chap01_odin {
+    height: 82%;
+
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+}
+
+#chap01_dragon {
+    height: 40%;
+
+    position: absolute;
+    top: 27%;
+    left: 55%;
+
+    opacity: 0.1;
 }
