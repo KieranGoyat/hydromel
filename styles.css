@@ -81,6 +81,14 @@ nav {
     justify-content: center;
 }
 
+/* taille fixe pour éviter les tremblements dû aux arrondis pendant les animations */
+.summary_chapter_link {
+    height: 42px;
+}
+.summary_subchapter_link {
+    height: 32px;
+}
+
 .summary_chapter_link::before, .summary_subchapter_link::before {
     content: '';
     display: block;
@@ -89,7 +97,7 @@ nav {
     border: 5px solid var(--menu-bg-color);
     border-radius: 50%;
 
-    transition: 0.2s;
+    transition: linear 0.2s;
 }
 
 .summary_chapter_link::before {
@@ -254,8 +262,7 @@ main {
     text-align: center;
 }
 
-img[data-parallax-x],
-img[data-parallax-y] {
+img[data-parallax] {
     transition: 3s;
     transition-timing-function: cubic-bezier(.04,.69,.34,.93);
 }
@@ -264,7 +271,7 @@ img[data-parallax-y] {
     height: 33%;
 
     position: absolute;
-    bottom: 0;
+    bottom: -3vh;
     left: 35%;
 }
 
@@ -273,15 +280,15 @@ img[data-parallax-y] {
 
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -6vw;
 }
 
 #chap01_odin {
     height: 82%;
 
     position: absolute;
-    bottom: -5%;
-    right: 0;
+    bottom: -6vh;
+    right: -6vw;
 }
 
 #chap01_dragon {

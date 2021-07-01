@@ -1,38 +1,33 @@
-window.addEventListener("mousemove", e => {
+window.addEventListener("mousemove", mouseMove);
 
-    let xPos = e.clientX;
-    let yPos = e.clientY;
+//trigger parallax max one per frame -> smooth
+let lastUpdateCall = null;
+function mouseMove(e){
 
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+    if(lastUpdateCall) cancelAnimationFrame(lastUpdateCall);
 
-    let x = xPos / width;
-    let y = yPos /height;
+    lastUpdateCall = requestAnimationFrame(()=>{
+        parallax(e);
+        lastUpdateCall = null;
+    });
 
-    let parallaxElements = document.querySelectorAll("[data-parallax-x], [data-parallax-y]");
+}
+
+function parallax(e){
+
+    let parallaxElements = document.querySelectorAll("[data-parallax]");
     parallaxElements.forEach(element => {
 
-        let coefX = element.getAttribute("data-parallax-x");
-        let coefY = element.getAttribute("data-parallax-y");
+        //1 speed means move by 1% of main element
+        let speed = element.getAttribute("data-parallax");
 
-        let moveX = 0;
-        let moveY = 0;
+        let moveX = - e.clientX * speed / 100; 
+        let moveY = - e.clientY * speed / 100;
 
-        if(coefX !== null){
-            moveX = -x * coefX;
-        }
+        console.log(element.getBoundingClientRect().left);
 
-        if(coefY !== null){
-            moveY = -y * coefY;
-        }
+        element.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
 
-        console.log(moveX, moveY);
+    });
 
-        let transform = "translateX(" + moveX + "%) translateY(" + moveY + "%)";
-        element.style.transform = transform;
-
-    })
-
-    console.log("##########");
-
-})
+}
