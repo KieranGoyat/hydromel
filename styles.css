@@ -267,6 +267,59 @@ img[data-parallax] {
     transition-timing-function: cubic-bezier(.04,.69,.34,.93);
 }
 
+.home_letter {
+    width: 7%;
+    position: absolute;
+}
+
+#preview {
+    opacity: 0.2;
+}
+
+/* Home */
+#home_H {
+    top: 36%;
+    left: 7%;
+}
+
+#home_Y {
+    width: 11%;
+    top: 52%;
+    left: 14%;
+}
+
+#home_D {
+    left: 32%;
+    top: 33%;
+}
+
+#home_R {
+    left: 39%;
+    top: 44%;
+}
+
+#home_O {
+    left: 52%;
+    top: 42%;
+}
+
+#home_M {
+    left: 64%;
+    top: 32%;
+}
+
+#home_E {
+    width: 6%;
+    left: 73%;
+    top: 47%;
+}
+
+#home_L {
+    top: 36%;
+    left: 86%;
+}
+
+/* CHAP 1 Intro */
 #chap01_kvasir {
     height: 33%;
 
