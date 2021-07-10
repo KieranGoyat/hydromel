@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chap 01 - La naissance de Kvasir</title>
+    <title>Chap 01 - Part 1 - La Guerre</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
         <div id="summary">
 
             <!-- Chapter 1 -->
-            <a href="/chap1" class="summary_chapter_link active">
+            <a href="/chap1" class="summary_chapter_link">
                 <div class="chapter_label_container">
                     <div class="chapter_label">
                         <p class="chapter_name">Chapitre 1</p>
@@ -35,7 +35,7 @@
             </a>
             
 
-            <a href="/chap1/part1" class="summary_subchapter_link">
+            <a href="/chap1/part1" class="summary_subchapter_link active">
                 <div class="chapter_label_container">
                     <div class="subchapter_label">
                         <p class="subchapter_name">Partie 1</p>
@@ -142,32 +142,45 @@
 
     <main id="main">
 
-        <div class="background layer" style="background-image: url('/media/images/intro_chap_01/background.png');"></div>
+        <div class="background layer" style="background-image: url('/media/images/chap_01_part_01/bakcground.png');"></div>
 
         <div class="image_container layer">
-            <img id="chap01_freya" src="/media/images/intro_chap_01/freya.png" alt="Freya"
-                data-parallax="-6">
-            <img id="chap01_odin" src="/media/images/intro_chap_01/odin.png" alt="Odin"
-                data-parallax="6">
-            <img id="chap01_dragon" src="/media/images/intro_chap_01/dragon_motif.png" alt="Dragon"
-                data-parallax="10">
+            <img id="chap01_part01_battle" src="/media/images/chap_01_part_01/battle.png" alt="Bataille"
+                data-parallax="-4">
         </div>
 
         <div class="shadow layer"></div>
 
-        <div class="image_container layer">
-            <img id="chap01_kvasir" src="/media/images/intro_chap_01/kvasir.png" alt="Kvasir"
-                data-parallax="3">
+        <div class="layer part_name_container">
+            <p class="part_name">CHAPITRE 01</p>
         </div>
 
-        <div class="title layer">
-            <p class="title_number">CHAPITRE 1</p>
-            <p class="title_name">LA NAISSANCE</br> DE KVASIR</p>
+        <div class="layer content_container">
+            <div class="content">
+                <p class="content_title">La Guerre</p>
+                <p class="content_text">Durant de nombreux hivers, la première guerre de l’univers fit rage. Opposant les <s>Ases</s>, représentés par Odin et Thor, aux <s>Vanes</s>, des dieux plus anciens liés à la fertilité et à la sagesse.</p>
+            </div>
+        </div>
+
+        <div class="image_container layer">
+            <div id="chap01_part01_odin" class="hoverable_img_container">
+                <img src="/media/images/chap_01_part_01/odin.png" alt="Odin"
+                    data-parallax="3">
+                <p class="img_info">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
+            </div>
+
+            <div id="chap01_part01_freyr" class="hoverable_img_container">
+                <img src="/media/images/chap_01_part_01/freyr.png" alt="Freyr"
+                data-parallax="1">
+                <p class="img_info">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
+            </div>
         </div>
 
     </main>
 
     <script src="/JS/parallax.js"></script>
+    <script src="/JS/clickable.js"></script>
+
     
 </body>
 </html>
