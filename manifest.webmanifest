@@ -1,0 +1,27 @@
+{
+    "short_name": "Hydromel",
+    "name": "Hydromel - La boisson des Dieux",
+    "start_url": "index.html",
+    "theme_color": "#ff7878",
+    "background_color": "#1f1f1f",
+    "display":      "fullscreen",
+    "orientation":  "landscape",
+    "scope": "/",
+    "icons": [
+        {
+          "src": "media/icons/odin48.png",
+          "type": "image/png",
+          "sizes": "48x48"
+        },
+        {
+          "src": "media/icons/odin96.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "media/icons/odin192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+}
