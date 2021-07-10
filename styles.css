@@ -29,7 +29,8 @@ body {
 nav {
     background-color: var(--gray);
 
-    width: 70px;
+    width: 5vw;
+    max-width: 70px;
     height: 100%;
 
     flex-shrink: 0;
@@ -44,23 +45,28 @@ nav {
 
 #home_container {
     position: absolute;
-    top: 40px;
+    top: 2vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #icon_accueil {
     fill: white;
-    width: 30px;
+    width: 65%;
 }
 
 #menu {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 1vw;
     text-decoration: line-through var(--accentuated-color) 2px;
     transform: rotate(270deg);
 
     position: absolute;
-    top: 100px;
+    top: 12vh;
 }
 
 /* summary */
@@ -84,10 +90,14 @@ nav {
 
 /* taille fixe pour éviter les tremblements dû aux arrondis pendant les animations */
 .summary_chapter_link {
-    height: 42px;
+    /*height: 42px;*/
+    height: 6.5vh;
+    max-height: 42px;
 }
 .summary_subchapter_link {
-    height: 32px;
+    /*height: 32px;*/
+    height: 4.5vh;
+    max-height: 32px;
 }
 
 .summary_chapter_link::before, .summary_subchapter_link::before {
@@ -95,26 +105,37 @@ nav {
     display: block;
     background-color: var(--accentuated-color);
 
-    border: 5px solid var(--gray);
+    border: min(5px, 1vh) solid var(--gray);
     border-radius: 50%;
 
     transition: linear 0.2s;
 
     /* can't use outline as it is squared on chrome */
     /*outline: 0px solid #ffffff00;*/
-    box-shadow: 0 0 0 0px #ffffff00;
+    box-shadow: 0 0 0 0vh #ffffff00;
 }
 
 .summary_chapter_link::before {
     margin: 6px;
-    width: 20px;
-    height: 20px;
+    /*width: 20px;
+    height: 20px;*/
+
+    width: 3vh;
+    max-width: 20px;
+    height: 3vh;
+    max-height: 20px;
 }
 
 .summary_subchapter_link::before {
     margin: 4px;
-    width: 14px;
-    height: 14px;
+    
+    /*width: 14px;
+    height: 14px;*/
+
+    width: 2vh;
+    max-width: 14px;
+    height: 2vh;
+    max-height: 14px;
 }
 
 .summary_chapter_link:hover::before, 
@@ -125,8 +146,13 @@ nav {
 
     margin: 4px;
 
-    width: 24px;
-    height: 24px;
+    /*width: 24px;
+    height: 24px;*/
+
+    width: 3.5vh;
+    max-width: 24px;
+    height: 3.5vh;
+    max-height: 24px;
 }
 
 .summary_subchapter_link:hover::before,
@@ -137,8 +163,13 @@ nav {
 
     margin: 3px;
 
-    width: 16px;
-    height: 16px;
+    /*width: 16px;
+    height: 16px;*/
+
+    width: 2vh;
+    max-width: 16px;
+    height: 2vh;
+    max-height: 16px;
 }
 
 .chapter_label_container {
@@ -214,7 +245,16 @@ nav {
 
 #mjod_container {
     position: absolute;
-    bottom: 50px;
+    bottom: 5vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mjod {
+    width: 65%;
 }
 
 
