@@ -456,6 +456,36 @@ img[data-parallax] {
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
 }
 
+/* rotate your screen */
+#rotate_your_screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    background: url("/media/images/home_page/background.png");
+    background-color: white;
+    background-size: cover;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#rotate_your_screen_text {
+    font-size: 4vh;
+    font-weight: 700;
+    font-family: 'Enriqueta', serif;
+}
+
+@media (orientation: portrait) {
+    #rotate_your_screen {
+        display: flex;
+    }
+}
+
 /* Home */
 .home_letter {
     width: 7%;
