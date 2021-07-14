@@ -56,6 +56,7 @@ nav {
 #icon_accueil {
     fill: white;
     width: 65%;
+    max-width: 32px;
 }
 
 #menu {
@@ -255,6 +256,7 @@ nav {
 
 #mjod {
     width: 65%;
+    max-width: 32px;
 }
 
 
@@ -389,12 +391,39 @@ img[data-parallax] {
     padding-left: 30px;
 }
 
+
+.hoverable_img_container {
+    z-index: 1;
+}
+
+.hoverable_img_container:hover {
+    z-index: 2;
+}
+
 .hoverable_img_container > img {
     height: 100%;
 }
 
 .hoverable_img_container:hover > .img_info {
     opacity: 1;
+}
+
+.hoverable_img_container:hover > .hoverable_img_background {
+    opacity: 0.7;
+}
+
+.hoverable_img_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300vw;
+    height: 300vh;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--gray);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 0;
+    transition: 0.5s;
 }
 
 .img_info {
@@ -409,9 +438,7 @@ img[data-parallax] {
 
     padding: 15px;
 
-    background-color: #d3d3d3;
-    border: 3px solid var(--accentuated-color);
-    border-radius: 15px;
+    background-color: white;
 
     text-align: justify;
 
@@ -423,6 +450,10 @@ img[data-parallax] {
     opacity: 0;
 
     transition-duration: 0.5s;
+
+    pointer-events: none;
+
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
 }
 
 /* Home */
