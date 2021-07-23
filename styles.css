@@ -391,6 +391,10 @@ img[data-parallax] {
     padding-left: 30px;
 }
 
+.redtext {
+    color: var(--accentuated-color);
+}
+
 
 .hoverable_img_container {
     z-index: 1;
@@ -705,4 +709,29 @@ img[data-parallax] {
     position: absolute;
     top: 27%;
     left: 65%;
+}
+
+/* Chap 02 Part 01 */
+#chap02_part01_assassinat {
+    height: 40%;
+
+    position: absolute;
+    bottom: 0vh;
+    left: -5vw;
+}
+
+#chap02_part01_fjalar_galar {
+    height: 40%;
+
+    position: absolute;
+    top: 10vh;
+    right: 6vw;
+}
+
+#chap02_part01_sang {
+    height: 90%;
+
+    position: absolute;
+    top: 0vh;
+    left: 60vw;
 }
