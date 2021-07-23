@@ -547,7 +547,7 @@ img[data-parallax] {
     left: 86%;
 }
 
-/* CHAP 1 Intro */
+/* Chap 01 Intro */
 #chap01_kvasir {
     height: 33%;
 
@@ -680,4 +680,29 @@ img[data-parallax] {
     position: absolute;
     bottom: -5vh;
     left: 0vw;
+}
+
+/* Chap 02 Intro*/
+#chap02_fjalar_galar {
+    height: 40%;
+
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;
+}
+
+#chap02_suttung {
+    height: 50%;
+
+    position: absolute;
+    bottom: -4vh;
+    left: 0vw;
+}
+
+#chap02_dragon {
+    height: 50%;
+
+    position: absolute;
+    top: 27%;
+    left: 65%;
 }
