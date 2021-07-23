@@ -426,13 +426,23 @@ img[data-parallax] {
     transition: 0.5s;
 }
 
-.img_info {
+.upper_left {
     position: absolute;
     top: 0;
     right: 0;
 
     transform: translateX(-50%) translateY(-100%);
+}
 
+.upper_right {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateX(50%) translateY(-100%);
+}
+
+.img_info {
     min-width: 300px;
     width: 20vw;
 
@@ -463,6 +473,7 @@ img[data-parallax] {
     height: 100vh;
     top: 0;
     left: 0;
+    z-index: 9999;
 
     background: url("/media/images/home_page/background.png");
     background-color: white;
@@ -472,6 +483,8 @@ img[data-parallax] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    pointer-events: none;
 }
 
 #rotate_your_screen_text {
@@ -592,4 +605,79 @@ img[data-parallax] {
     position: absolute;
     bottom: -1vh;
     right: 25vw;
+}
+
+/* Chap 01 Part 02 */
+#chap01_part02_chevals {
+    height: 60%;
+
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;
+}
+
+#chap01_part02_kvasir {
+    height: 40%;
+
+    position: absolute;
+    top: -3vh;
+    left: 20vw;
+}
+
+#chap01_part02_kvasir_bottom {
+    height: 40%;
+
+    position: absolute;
+    bottom: -4vh;
+    left: -4vw;
+}
+
+/* Chap 01 Part 03 */
+#chap01_part03_livre01 {
+    height: 40%;
+
+    position: absolute;
+    top: -5vh;
+    left: 15vw;
+}
+
+#chap01_part03_livre02 {
+    height: 20%;
+
+    position: absolute;
+    top: -3vh;
+    left: 18vw;
+}
+
+#chap01_part03_livre03 {
+    height: 35%;
+
+    position: absolute;
+    top: -2vh;
+    left: 22vw;
+}
+
+#chap01_part03_brain {
+    height: 65%;
+
+    position: absolute;
+    top: -4vh;
+    left: 75vw;
+}
+
+#chap01_part03_hommes {
+    height: 30%;
+
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;
+}
+
+
+#chap01_part03_exploration{
+    height: 45%;
+
+    position: absolute;
+    bottom: -5vh;
+    left: 0vw;
 }
