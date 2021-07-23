@@ -735,3 +735,44 @@ img[data-parallax] {
     top: 0vh;
     left: 60vw;
 }
+
+/* Chap 02 Part 02 */
+#chap02_part02_abeille {
+    height: 15%;
+
+    position: absolute;
+    top: 12vh;
+    left: 12vw;
+}
+
+#chap02_part02_druide {
+    height: 50%;
+
+    position: absolute;
+    bottom: 0vh;
+    left: -3vw;
+}
+
+#chap02_part02_fjalar_galar {
+    height: 40%;
+
+    position: absolute;
+    bottom: -4vh;
+    right: -4vw;
+}
+
+#chap02_part02_suttung_pere {
+    height: 55%;
+
+    position: absolute;
+    top: -4vh;
+    left: 70vw;
+}
+
+#chap02_part02_suttung_mere {
+    height: 50%;
+
+    position: absolute;
+    top: -8vh;
+    left: 75vw;
+}
