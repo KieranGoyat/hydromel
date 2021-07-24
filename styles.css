@@ -776,3 +776,36 @@ img[data-parallax] {
     top: -8vh;
     left: 75vw;
 }
+
+/* Chap 02 Part 03 */
+#chap02_part03_suttung {
+    height: 50%;
+
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;   
+}
+
+#chap02_part03_fjalar {
+    height: 40%;
+
+    position: absolute;
+    top: 0vh;
+    left: 10vw;   
+}
+
+#chap02_part03_galar {
+    height: 28%;
+
+    position: absolute;
+    top: 0vh;
+    left: 15vw;   
+}
+
+#chap02_part03_hand, #chap02_part03_fiole {
+    height: 40%;
+
+    position: absolute;
+    bottom: 0vh;
+    left: 20vw;   
+}
