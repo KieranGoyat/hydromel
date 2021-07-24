@@ -834,3 +834,28 @@ img[data-parallax] {
     bottom: 0vh;
     left: -3vw;
 }
+
+/* Chap 3 Part 1 */
+#chap03_part01_odin {
+    height: 40%;
+
+    position: absolute;
+    top: -5vh;
+    right: 15vw;   
+}
+
+#chap03_part01_baugi {
+    height: 50%;
+
+    position: absolute;
+    bottom: -2vh;
+    right: -2vw;   
+}
+
+#chap03_part01_gunnlod {
+    height: 50%;
+
+    position: absolute;
+    bottom: 0vh;
+    left: -3vw;   
+}
