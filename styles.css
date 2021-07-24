@@ -295,19 +295,19 @@ main {
     align-items: center;
     justify-content: center;
 
-    transform: translateY(-40px);
+    transform: translateY(-5vh);
 }
 
 .title_number {
     color: white;
-    font-size: 24px;
+    font-size: 4vh;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
 
 .title_name {
     color: white;
-    font-size: 16vh;
+    font-size: 12vh;
     font-weight: 400;
     font-family: 'Heorot', 'Enriqueta', serif;
     text-align: center;
@@ -808,4 +808,29 @@ img[data-parallax] {
     position: absolute;
     bottom: 0vh;
     left: 20vw;   
+}
+
+/* Chap 3 Intro */
+#chap03_dragon {
+    height: 35%;
+
+    position: absolute;
+    top: 27%;
+    left: 55%;
+}
+
+#chap03_arbre {
+    height: 102%;
+
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;
+}
+
+#chap03_gunnlod_odin {
+    height: 40%;
+
+    position: absolute;
+    bottom: 0vh;
+    left: -3vw;
 }
