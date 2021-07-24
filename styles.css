@@ -876,3 +876,28 @@ img[data-parallax] {
     top: 10vh;
     right: 0vw;    
 }
+
+/* Chap 3 Part 3 */
+#chap03_part03_aigle {
+    height: 75%;
+
+    position: absolute;
+    top: 0vh;
+    left: 10vw;   
+}
+
+#chap03_part03_valhalla {
+    height: 30%;
+
+    position: absolute;
+    bottom: -2vh;
+    right: 0vw;   
+}
+
+#chap03_part03_yggdrasil {
+    height: 65%;
+
+    position: absolute;
+    top: -3vh;
+    right: 10vw;   
+}
