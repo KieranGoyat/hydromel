@@ -859,3 +859,20 @@ img[data-parallax] {
     bottom: 0vh;
     left: -3vw;   
 }
+
+/* Chap 3 Part 2 */
+#chap03_part02_gunnlod_odin {
+    height: 40%;
+
+    position: absolute;
+    bottom: -3vh;
+    left: 0vw;   
+}
+
+#chap03_part02_hand, #chap03_part02_fiole {
+    height: 40%;
+
+    position: absolute;
+    top: 10vh;
+    right: 0vw;    
+}
