@@ -613,14 +613,14 @@ img[data-parallax] {
 
 /* Chap 01 Part 02 */
 #chap01_part02_chevals {
-    height: 60%;
+    height: 50%;
 
     position: absolute;
     bottom: 0vh;
     right: 0vw;
 }
 
-#chap01_part02_kvasir {
+#chap01_part02_freya_odin {
     height: 40%;
 
     position: absolute;
@@ -628,7 +628,7 @@ img[data-parallax] {
     left: 20vw;
 }
 
-#chap01_part02_kvasir_bottom {
+#chap01_part02_kvasir {
     height: 40%;
 
     position: absolute;
