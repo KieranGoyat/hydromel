@@ -907,7 +907,7 @@ img[data-parallax] {
 
     position: absolute;
     top: 32vh;
-    left: 30vw;   
+    left: 32vw;   
 }
 
 #fourofour_thor {
@@ -915,7 +915,7 @@ img[data-parallax] {
 
     position: absolute;
     top: -3vh;
-    left: 40vw;   
+    left: 42vw;   
 }
 
 #fourofour_right {
@@ -923,7 +923,7 @@ img[data-parallax] {
 
     position: absolute;
     top: 35vh;
-    left: 49vw;   
+    left: 52vw;   
 }
 
 #fourofour_home_ref {
@@ -957,4 +957,40 @@ img[data-parallax] {
 
     width: 100%;
     padding: 10px;
+}
+
+/* conclu */
+#conclu_f {
+    height: 65%;
+
+    position: absolute;
+    top: -4vh;
+    left: 28vw;   
+}
+
+#conclu_i {
+    height: 75%;
+
+    position: absolute;
+    top: -5vh;
+    left: 40vw;   
+}
+
+#conclu_n {
+    height: 65%;
+
+    position: absolute;
+    top: -3vh;
+    left: 48vw;   
+}
+
+#conclu_bottom_text {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
