@@ -661,22 +661,13 @@ img[data-parallax] {
     left: 22vw;
 }
 
-#chap01_part03_brain {
-    height: 65%;
+#chap01_part03_moine {
+    height: 75%;
 
     position: absolute;
     top: -4vh;
     left: 75vw;
 }
-
-#chap01_part03_hommes {
-    height: 30%;
-
-    position: absolute;
-    bottom: 0vh;
-    right: 0vw;
-}
-
 
 #chap01_part03_exploration{
     height: 45%;
