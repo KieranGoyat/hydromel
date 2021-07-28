@@ -885,8 +885,16 @@ img[data-parallax] {
     right: 0vw;   
 }
 
-#chap03_part03_yggdrasil {
-    height: 65%;
+#chap03_part03_tonneau1 {
+    height: 35%;
+
+    position: absolute;
+    top: -1vh;
+    right: 15vw;   
+}
+
+#chap03_part03_tonneau2 {
+    height: 55%;
 
     position: absolute;
     top: -3vh;
