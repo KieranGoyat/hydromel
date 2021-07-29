@@ -527,16 +527,22 @@ img[data-parallax], div[data-parallax] {
 
 .content_text {
     font-family: 'Enriqueta', serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
 
     color: var(--gray);
 
-    min-width: 350px;
+    min-width: 300px;
     width: 20%;
     text-align: justify;
 
     padding-left: 30px;
+}
+
+@media screen and (min-height: 700px) {
+    .content_text {
+        font-size: 20px;
+    }
 }
 
 .redtext {
