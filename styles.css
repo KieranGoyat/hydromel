@@ -461,7 +461,7 @@ main {
     text-align: center;
 }
 
-img[data-parallax] {
+img[data-parallax], div[data-parallax] {
     transition-property: transform;
     transition-duration: 3s;
     transition-timing-function: cubic-bezier(.04,.69,.34,.93);
@@ -1141,4 +1141,35 @@ img[data-parallax] {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+/* fiole effects */
+.shaking_fiole {
+    width: 100%;
+    height: 100%;
+    animation: 4s ease 0s infinite shaking;
+}
+
+#chap02_part03_fiole_inner {
+    transform-origin: 51% 85%;
+}
+
+#chap03_part02_fiole_inner {
+    transform-origin: 28% 37%;
+}
+
+@keyframes shaking {
+    0% { transform: rotate(0deg);}
+    2% { transform: rotate(15deg);}
+    4% { transform: rotate(-15deg);}
+    6% { transform: rotate(15deg);}
+    8% { transform: rotate(-15deg);}
+    10% { transform: rotate(15deg);}
+    12% { transform: rotate(-15deg);}
+    14% { transform: rotate(15deg);}
+    16% { transform: rotate(-15deg);}
+    18% { transform: rotate(15deg);}
+    20% { transform: rotate(-15deg);}
+    22% { transform: rotate(0deg);}
+    100% { transform: rotate(0deg);}
 }

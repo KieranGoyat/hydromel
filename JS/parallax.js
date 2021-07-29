@@ -30,13 +30,29 @@ function parallax(e){
         let moveX = - e.clientX * speed / 100; 
         let moveY = - e.clientY * speed / 100;
 
-        element.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+        setTranslate(element, moveX, moveY);
 
     });
 
     //enable floating in 2s if no call to parallax
     floatingCall = setTimeout(()=>{ isFloating = true;}, 1000);
 
+}
+
+
+const reMatrixStart = new RegExp("matrix\\([^,]*,\\s[^,]*,\\s[^,]*,\\s[^,]*,\\s");
+/**
+ * update translate properties of transform without affecting rotation
+ */
+function setTranslate(element, moveX, moveY){
+    let matrix = window.getComputedStyle(element).getPropertyValue('transform');
+    if(matrix == "none"){
+        matrix = "matrix(1, 0, 0, 1, 0, 0)";
+    }
+
+    let newMatrix = matrix.match(reMatrixStart)[0] + moveX + ", " + moveY + ")";
+
+    element.style.transform = newMatrix;
 }
 
 /**
@@ -62,7 +78,7 @@ function floating(){
         let moveX = - x * speed / 100; 
         let moveY = - y * speed / 100;
 
-        element.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+        setTranslate(element, moveX, moveY);
 
     });
 
