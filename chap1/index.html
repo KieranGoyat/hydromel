@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <nav>
+    <nav id="nav_pc">
 
         <a href="/" id="home_container" title="Accueil">
             <svg xmlns="http://www.w3.org/2000/svg" id="icon_accueil" viewBox="0 0 100 100"><g id="accueil"><path d="M89,39H87.17A11,11,0,0,0,78.05,22h-.64A11,11,0,0,0,68.29,4.88H31.71A11,11,0,0,0,22.59,22H22A11,11,0,0,0,12.83,39H11a11,11,0,0,0,0,22h1.85A11,11,0,0,0,22,78.05h.64a11,11,0,0,0,9.12,17.07H68.29a11,11,0,0,0,9.12-17.07h.64A11,11,0,0,0,87.17,61H89a11,11,0,1,0,0-22ZM25.61,15.85a6.1,6.1,0,0,1,6.1-6.09H68.29a6.1,6.1,0,1,1,0,12.19H31.71A6.1,6.1,0,0,1,25.61,15.85ZM15.85,32.93a6.11,6.11,0,0,1,6.1-6.1h56.1a6.1,6.1,0,1,1,0,12.19H59.65a14.58,14.58,0,0,0-19.3,0H22A6.1,6.1,0,0,1,15.85,32.93ZM59.76,50a9.9,9.9,0,1,1-2.21-6.1A9.65,9.65,0,0,1,59.76,50ZM11,56.1a6.1,6.1,0,1,1,0-12.2H36.71a14.55,14.55,0,0,0,0,12.2H11ZM74.39,84.15a6.1,6.1,0,0,1-6.1,6.09H31.71a6.1,6.1,0,1,1,0-12.19H68.29A6.1,6.1,0,0,1,74.39,84.15Zm9.76-17.08a6.11,6.11,0,0,1-6.1,6.1H22A6.1,6.1,0,1,1,22,61h18.4a14.58,14.58,0,0,0,19.3,0h18.4A6.1,6.1,0,0,1,84.15,67.07ZM89,56.1H63.29a14.55,14.55,0,0,0,0-12.2H89a6.1,6.1,0,1,1,0,12.2Z"/></g></svg>
@@ -30,7 +30,7 @@
             <a href="/chap1" class="summary_chapter_link active">
                 <div class="chapter_label_container">
                     <div class="chapter_label">
-                        <p class="chapter_name">Chapitre 1</p>
+                        <p class="chapter_name">CHAPITRE 1</p>
                         <p class="chapter_title">La naissance de Kvasir</p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="chapter_label_container">
                     <div class="subchapter_label">
                         <p class="subchapter_name">Partie 2</p>
-                        <p class="subchapter_title">La Trève</p>
+                        <p class="subchapter_title">La Trêve</p>
                     </div>
                 </div>
             </a>
@@ -57,7 +57,7 @@
                 <div class="chapter_label_container">
                     <div class="subchapter_label">
                         <p class="subchapter_name">Partie 3</p>
-                        <p class="subchapter_title">La Savoir</p>
+                        <p class="subchapter_title">Le Savoir</p>
                     </div>
                 </div>
             </a>
@@ -66,7 +66,7 @@
             <a href="/chap2" class="summary_chapter_link">
                 <div class="chapter_label_container">
                     <div class="chapter_label">
-                        <p class="chapter_name">Chapitre 2</p>
+                        <p class="chapter_name">CHAPITRE 2</p>
                         <p class="chapter_title">La création de l'hydromel poétique</p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
             <a href="/chap3" class="summary_chapter_link">
                 <div class="chapter_label_container">
                     <div class="chapter_label">
-                        <p class="chapter_name">Chapitre 3</p>
+                        <p class="chapter_name">CHAPITRE 3</p>
                         <p class="chapter_title">La ruse d'Odin</p>
                     </div>
                 </div>
@@ -138,6 +138,120 @@
 
         <div id="mjod_container">
             <img src="/media/images/logo.svg" alt="mjod" id="mjod">
+        </div>
+
+    </nav>
+
+    <div id="nav_mobile_opener" class="nav_button" onclick='document.getElementById("nav_mobile").classList.toggle("closed");'>
+       <img src="/media/images/logo.svg" alt="menu" id="menu_burger">
+    </div>
+    <nav id="nav_mobile" class="closed">
+        <div id="nav_mobile_closer" class="nav_button" onclick='document.getElementById("nav_mobile").classList.toggle("closed");'>
+            <img src="/media/images/logo.svg" alt="close menu" id="close_menu">
+        </div>
+
+        <p id="nav_mobile_title">&nbsp;MENU&nbsp;</p>
+
+        <div id="nav_mobile_link_container">
+            <!-- CHAPITRE 1 -->
+            <a class="mobile_chapter_link" href="/chap1">
+                <div class="big_puce active"></div>
+                <div class="mobile_chapter_content">
+                    <p class="mobile_chapter_number">CHAPITRE 1</p>
+                    <p class="mobile_chapter_title">LA NAISSANCE DE KVASIR</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap1/part1">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 1</p>
+                    <p class="mobile_subchapter_title">La Guerre</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap1/part2">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 2</p>
+                    <p class="mobile_subchapter_title">La Trêve</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap1/part3">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 3</p>
+                    <p class="mobile_subchapter_title">Le Savoir</p>
+                </div>
+            </a>
+
+            <!-- CHAPITRE 2 -->
+            <a class="mobile_chapter_link" href="/chap2">
+                <div class="big_puce"></div>
+                <div class="mobile_chapter_content">
+                    <p class="mobile_chapter_number">CHAPITRE 2</p>
+                    <p class="mobile_chapter_title">LA CRÉATION DE L'HYDROMEL POÉTIQUE</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap2/part1">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 1</p>
+                    <p class="mobile_subchapter_title">L'Assassinat</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap2/part2">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 2</p>
+                    <p class="mobile_subchapter_title">Le Mélange</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap2/part3">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 3</p>
+                    <p class="mobile_subchapter_title">L'Échange</p>
+                </div>
+            </a>
+
+            <!-- CHAPITRE 3 -->
+            <a class="mobile_chapter_link" href="/chap3">
+                <div class="big_puce"></div>
+                <div class="mobile_chapter_content">
+                    <p class="mobile_chapter_number">CHAPITRE 3</p>
+                    <p class="mobile_chapter_title">LA RUSE D'ODIN</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap3/part1">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 1</p>
+                    <p class="mobile_subchapter_title">Le Stratagème</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap3/part2">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 2</p>
+                    <p class="mobile_subchapter_title">Le Mensonge</p>
+                </div>
+            </a>
+
+            <a class="mobile_subchapter_link" href="/chap3/part3">
+                <div class="small_puce"></div>
+                <div class="mobile_subchapter_content">
+                    <p class="mobile_subchapter_number">PARTIE 3</p>
+                    <p class="mobile_subchapter_title">Le Valhalla</p>
+                </div>
+            </a>
+
         </div>
 
     </nav>
