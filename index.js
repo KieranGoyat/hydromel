@@ -10,6 +10,7 @@ import Wheely from '/JS/Wheely';
 window.onload = init;
 
 function init(){
+  console.log("Hydromel V1.0.0.0");
 
   //######## HIGHWAY CONF ##########################
   const H = new Highway.Core({
@@ -33,4 +34,12 @@ function init(){
     Wheely.updateLocations(to.view);
   });
   //######## WHEELY INIT END #######################
+
+  //######## MOBILE CLOSE MENU #####################
+  document.querySelectorAll("a.mobile_chapter_link, a.mobile_subchapter_link").forEach(element => {
+    element.addEventListener("click", () => {
+      document.getElementById("nav_mobile").classList.add("closed");
+    })
+  })
+  //######## MOBILE CLOSE MENU END #################
 }
