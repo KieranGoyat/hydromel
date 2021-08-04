@@ -70,15 +70,23 @@ class Wheely {
         if(Wheely.activated && event.type == "wheel"){
             if(event.deltaY < 0){
                 //go up
-                if(Wheely.onWheelUpLocation != null){
-                    Wheely.H.redirect(window.location.origin + Wheely.onWheelUpLocation, "goUp");
-                }
+                Wheely.goUp();
             } else if(event.deltaY > 0){
                 //go down
-                if(Wheely.onWheelDownLocation != null){
-                    Wheely.H.redirect(window.location.origin + Wheely.onWheelDownLocation, "goDown");
-                }
+                Wheely.goDown();
             }
+        }
+    }
+
+    static goUp(){
+        if(Wheely.onWheelUpLocation != null){
+            Wheely.H.redirect(window.location.origin + Wheely.onWheelUpLocation, "goUp");
+        }
+    }
+
+    static goDown(){
+        if(Wheely.onWheelDownLocation != null){
+            Wheely.H.redirect(window.location.origin + Wheely.onWheelDownLocation, "goDown");
         }
     }
 

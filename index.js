@@ -6,11 +6,12 @@ import GoUpTransition from '/JS/transitions/GoUpTransition';
 import GoDownTransition from '/JS/transitions/GoDownTransition';
 
 import Wheely from '/JS/Wheely';
+import Swipper from '/JS/Swipper';
 
 window.onload = init;
 
 function init(){
-  console.log("Hydromel V1.0.0.0");
+  console.log("Hydromel V1.0.0.11");
 
   //######## HIGHWAY CONF ##########################
   const H = new Highway.Core({
@@ -42,4 +43,14 @@ function init(){
     })
   })
   //######## MOBILE CLOSE MENU END #################
+
+  //######## SWIPPER INIT ##########################
+  Swipper.swipedetect(document.getElementById("main_container"), (dir)=>{
+    if(dir == "down"){
+      Wheely.goUp();
+    } else if(dir == "up"){
+      Wheely.goDown();
+    }
+  })
+  //######## SWIPPER INIT END ######################
 }
