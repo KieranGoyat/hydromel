@@ -256,28 +256,32 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="index">
+            <param name="onWheelUpLocation" value="">
+            <param name="onWheelDownLocation" value="/chap1">
 
-        <div class="background layer" style="background-image: url('/media/images/home_page/background.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/home_page/background.png');"></div>
 
-        <div class="image_container layer">
-            <img class="home_letter" id="home_H" src="/media/images/home_page/H.png" data-parallax="5" alt="H">
-            <img class="home_letter" id="home_Y" src="/media/images/home_page/Y.png" data-parallax="-1" alt="Y">
-            <img class="home_letter" id="home_D" src="/media/images/home_page/D.png" data-parallax="1" alt="D">
-            <img class="home_letter" id="home_R" src="/media/images/home_page/R.png" data-parallax="3" alt="R">
-            <img class="home_letter" id="home_O" src="/media/images/home_page/O.png" data-parallax="-5" alt="O">
-            <img class="home_letter" id="home_M" src="/media/images/home_page/M.png" data-parallax="-1" alt="M">
-            <img class="home_letter" id="home_E" src="/media/images/home_page/E.png" data-parallax="2" alt="E">
-            <img class="home_letter" id="home_L" src="/media/images/home_page/L.png" data-parallax="-1" alt="L">
+            <div class="image_container layer">
+                <img class="home_letter" id="home_H" src="/media/images/home_page/H.png" data-parallax="5" alt="H">
+                <img class="home_letter" id="home_Y" src="/media/images/home_page/Y.png" data-parallax="-1" alt="Y">
+                <img class="home_letter" id="home_D" src="/media/images/home_page/D.png" data-parallax="1" alt="D">
+                <img class="home_letter" id="home_R" src="/media/images/home_page/R.png" data-parallax="3" alt="R">
+                <img class="home_letter" id="home_O" src="/media/images/home_page/O.png" data-parallax="-5" alt="O">
+                <img class="home_letter" id="home_M" src="/media/images/home_page/M.png" data-parallax="-1" alt="M">
+                <img class="home_letter" id="home_E" src="/media/images/home_page/E.png" data-parallax="2" alt="E">
+                <img class="home_letter" id="home_L" src="/media/images/home_page/L.png" data-parallax="-1" alt="L">
+            </div>
+
         </div>
-
-
-    </main>
+    </div>
 
     <div id="rotate_your_screen">
         <p id="rotate_your_screen_text">Tourne ton écran<br>Grande Salope !!!</p>
     </div>
 
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

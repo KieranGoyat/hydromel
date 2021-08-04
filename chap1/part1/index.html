@@ -256,50 +256,55 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap1">
+            <param name="onWheelDownLocation" value="/chap1/part2">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_01_part_01/bakcground.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_01_part_01/bakcground.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap01_part01_battle" src="/media/images/chap_01_part_01/battle.png" alt="Bataille"
-                data-parallax="-4">
-        </div>
-
-        <div class="shadow layer"></div>
-
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 01</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">La Guerre</p>
-                <p class="content_text">Durant de nombreux hivers, la première guerre de l’univers fit rage. Opposant les <s>Ases</s>, représentés par Odin et Thor, aux <s>Vanes</s>, des dieux plus anciens liés à la fertilité et à la sagesse.</p>
-            </div>
-        </div>
-
-        <div class="image_container layer">
-            <div id="chap01_part01_odin" class="hoverable_img_container">
-                <div class="hoverable_img_background"></div>
-                <img src="/media/images/chap_01_part_01/odin.png" alt="Odin"
-                    data-parallax="3">
-                <p class="img_info upper_left">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
+            <div class="image_container layer">
+                <img id="chap01_part01_battle" src="/media/images/chap_01_part_01/battle.png" alt="Bataille"
+                    data-parallax="-4">
             </div>
 
-            <div id="chap01_part01_freyr" class="hoverable_img_container">
-                <div class="hoverable_img_background"></div>
-                <img src="/media/images/chap_01_part_01/freyr.png" alt="Freyr"
-                    data-parallax="1">
-                <p class="img_info upper_left">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
-            </div>
-        </div>
+            <div class="shadow layer"></div>
 
-    </main>
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 01</p>
+            </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">La Guerre</p>
+                    <p class="content_text">Durant de nombreux hivers, la première guerre de l’univers fit rage. Opposant les <s>Ases</s>, représentés par Odin et Thor, aux <s>Vanes</s>, des dieux plus anciens liés à la fertilité et à la sagesse.</p>
+                </div>
+            </div>
+
+            <div class="image_container layer">
+                <div id="chap01_part01_odin" class="hoverable_img_container">
+                    <div class="hoverable_img_background"></div>
+                    <img src="/media/images/chap_01_part_01/odin.png" alt="Odin"
+                        data-parallax="3">
+                    <p class="img_info upper_left">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
+                </div>
+
+                <div id="chap01_part01_freyr" class="hoverable_img_container">
+                    <div class="hoverable_img_background"></div>
+                    <img src="/media/images/chap_01_part_01/freyr.png" alt="Freyr"
+                        data-parallax="1">
+                    <p class="img_info upper_left">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div id="rotate_your_screen">
         <p id="rotate_your_screen_text">Tourne ton écran<br>Grande Salope !!!</p>
     </div>
 
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

@@ -1,0 +1,1 @@
+parcel ./**/*.html --out-dir ../dist --cache-dir ../.cache-parcel

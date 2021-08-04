@@ -256,29 +256,34 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap3/part3">
+            <param name="onWheelDownLocation" value="/">
 
-        <div class="background layer" style="background-image: url('/media/images/conclu/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/conclu/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="conclu_f" src="/media/images/conclu/f.png" alt="FIN"
-                data-parallax="-4">
-            <img id="conclu_n" src="/media/images/conclu/n.png" alt="FIN"
-                data-parallax="-3">
-            <img id="conclu_i" src="/media/images/conclu/i.png" alt="FIN"
-                data-parallax="-5">
+            <div class="image_container layer">
+                <img id="conclu_f" src="/media/images/conclu/f.png" alt="FIN"
+                    data-parallax="-4">
+                <img id="conclu_n" src="/media/images/conclu/n.png" alt="FIN"
+                    data-parallax="-3">
+                <img id="conclu_i" src="/media/images/conclu/i.png" alt="FIN"
+                    data-parallax="-5">
+            </div>
+
+            <div class="shadow layer"></div>
+
+            <p id="conclu_bottom_text">Mjod.co, designed by Théo Le Bris, developped by Kiéran Goyat, All rights reserved</p>
+
         </div>
-
-        <div class="shadow layer"></div>
-
-        <p id="conclu_bottom_text">Mjod.co, designed by Théo Le Bris, developped by Kiéran Goyat, All rights reserved</p>
-
-    </main>
+    </div>
 
     <div id="rotate_your_screen">
         <p id="rotate_your_screen_text">Tourne ton écran<br>Grande Salope !!!</p>
     </div>
 
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

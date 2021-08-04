@@ -256,35 +256,40 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap3">
+            <param name="onWheelDownLocation" value="/chap3/part2">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_03_part_01/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_03_part_01/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap03_part01_odin" src="/media/images/chap_03_part_01/odin.png" alt="Odin"
-                data-parallax="-5">
-            <img id="chap03_part01_baugi" src="/media/images/chap_03_part_01/baugi.png" alt="Baugi"
-                data-parallax="2">
-            <img id="chap03_part01_gunnlod" src="/media/images/chap_03_part_01/gunnlod.png" alt="Gunnlod"
-                data-parallax="-3">
-        </div>
-
-        <div class="shadow layer"></div>
-
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 03</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">Le Stratagème</p>
-                <p class="content_text">Suttung connaissant bien la valeur de l’hydromel décide de cacher celui-ci au sein d’une montagne. <span class="redtext">Gunnlod</span>, fille de Suttung, fut désignée pour protéger la boisson.<br>
-                    Mais Odin refusa de laisser la boisson aux mains des géants. Après de multiples stratagèmes auprès de <span class="redtext">Baugi</span>, frère de Suttung, Odin sous sa forme de serpent parvient à atteindre le cœur de la montagne.</p>
+            <div class="image_container layer">
+                <img id="chap03_part01_odin" src="/media/images/chap_03_part_01/odin.png" alt="Odin"
+                    data-parallax="-5">
+                <img id="chap03_part01_baugi" src="/media/images/chap_03_part_01/baugi.png" alt="Baugi"
+                    data-parallax="2">
+                <img id="chap03_part01_gunnlod" src="/media/images/chap_03_part_01/gunnlod.png" alt="Gunnlod"
+                    data-parallax="-3">
             </div>
+
+            <div class="shadow layer"></div>
+
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 03</p>
+            </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">Le Stratagème</p>
+                    <p class="content_text">Suttung connaissant bien la valeur de l’hydromel décide de cacher celui-ci au sein d’une montagne. <span class="redtext">Gunnlod</span>, fille de Suttung, fut désignée pour protéger la boisson.<br>
+                        Mais Odin refusa de laisser la boisson aux mains des géants. Après de multiples stratagèmes auprès de <span class="redtext">Baugi</span>, frère de Suttung, Odin sous sa forme de serpent parvient à atteindre le cœur de la montagne.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-    </main>
-
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

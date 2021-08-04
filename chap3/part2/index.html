@@ -256,36 +256,41 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap3/part1">
+            <param name="onWheelDownLocation" value="/chap3/part3">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_03_part_02/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_03_part_02/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap03_part02_gunnlod_odin" src="/media/images/chap_03_part_02/odin et gunnlod.png" alt="Odin et Gunnlod"
-                data-parallax="3">
-            <img id="chap03_part02_hand" src="/media/images/chap_03_part_02/hand.png" alt="Main"
-                data-parallax="-4">
+            <div class="image_container layer">
+                <img id="chap03_part02_gunnlod_odin" src="/media/images/chap_03_part_02/odin et gunnlod.png" alt="Odin et Gunnlod"
+                    data-parallax="3">
+                <img id="chap03_part02_hand" src="/media/images/chap_03_part_02/hand.png" alt="Main"
+                    data-parallax="-4">
 
-            <div id="chap03_part02_fiole" data-parallax="-4">
-                <img id="chap03_part02_fiole_inner" class="shaking_fiole" src="/media/images/chap_03_part_02/fiole.png" alt="Fiole">
+                <div id="chap03_part02_fiole" data-parallax="-4">
+                    <img id="chap03_part02_fiole_inner" class="shaking_fiole" src="/media/images/chap_03_part_02/fiole.png" alt="Fiole">
+                </div>
             </div>
-        </div>
 
-        <div class="shadow layer"></div>
+            <div class="shadow layer"></div>
 
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 03</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">Le Mensonge</p>
-                <p class="content_text">Cependant, Odin tomba sur Gunnlod, <span class="redtext">protectrice de l’hydromel</span>. Mais Odin sait se montrer convaincant, et parvient ainsi à conclure un échange avec Gunnlod. En échange de 3 nuits de <s>plaisir endiablé</s>, il pourra récupérer 3 gorgées d’hydromel. Néanmoins, les 3 gorgées s’apparentèrent plutôt à 2 cuves ainsi qu’un chaudron.</p>
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 03</p>
             </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">Le Mensonge</p>
+                    <p class="content_text">Cependant, Odin tomba sur Gunnlod, <span class="redtext">protectrice de l’hydromel</span>. Mais Odin sait se montrer convaincant, et parvient ainsi à conclure un échange avec Gunnlod. En échange de 3 nuits de <s>plaisir endiablé</s>, il pourra récupérer 3 gorgées d’hydromel. Néanmoins, les 3 gorgées s’apparentèrent plutôt à 2 cuves ainsi qu’un chaudron.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-    </main>
-
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

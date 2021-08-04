@@ -256,45 +256,50 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap2/part2">
+            <param name="onWheelDownLocation" value="/chap3">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_02_part_03/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_02_part_03/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap02_part03_fjalar" src="/media/images/chap_02_part_03/fjalar.png" alt="Fjalar"
-                data-parallax="3">
-            <img id="chap02_part03_galar" src="/media/images/chap_02_part_03/galar.png" alt="Galar"
-                data-parallax="4">
-            <img id="chap02_part03_hand" src="/media/images/chap_02_part_03/hand.png" alt="Main"
-                data-parallax="-5">
-            <div id="chap02_part03_fiole" data-parallax="-5">
-                <img id="chap02_part03_fiole_inner" class="shaking_fiole" src="/media/images/chap_02_part_03/fiole.png" alt="Fiole">
+            <div class="image_container layer">
+                <img id="chap02_part03_fjalar" src="/media/images/chap_02_part_03/fjalar.png" alt="Fjalar"
+                    data-parallax="3">
+                <img id="chap02_part03_galar" src="/media/images/chap_02_part_03/galar.png" alt="Galar"
+                    data-parallax="4">
+                <img id="chap02_part03_hand" src="/media/images/chap_02_part_03/hand.png" alt="Main"
+                    data-parallax="-5">
+                <div id="chap02_part03_fiole" data-parallax="-5">
+                    <img id="chap02_part03_fiole_inner" class="shaking_fiole" src="/media/images/chap_02_part_03/fiole.png" alt="Fiole">
+                </div>
+                
             </div>
-            
-        </div>
 
-        <div class="shadow layer"></div>
+            <div class="shadow layer"></div>
 
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 02</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">L'Échange</p>
-                <p class="content_text"><span class="redtext">Suttung</span>, fils des 2 géants assassinés, soif de vengeance, captura les nains et les attachat à un récif bientôt immergé. Les nains suppliant pour leurs vies, offrir à Suttung l’hydromel poétique, ce que celui-ci accepta.</p>
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 02</p>
             </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">L'Échange</p>
+                    <p class="content_text"><span class="redtext">Suttung</span>, fils des 2 géants assassinés, soif de vengeance, captura les nains et les attachat à un récif bientôt immergé. Les nains suppliant pour leurs vies, offrir à Suttung l’hydromel poétique, ce que celui-ci accepta.</p>
+                </div>
+            </div>
+
+            <div id="chap02_part03_suttung" class="hoverable_img_container">
+                <div class="hoverable_img_background"></div>
+                <img src="/media/images/chap_02_part_03/suttung.png" alt="Suttung"
+                    data-parallax="-2">
+                <p class="img_info upper_left">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
+            </div>
+
         </div>
+    </div>
 
-        <div id="chap02_part03_suttung" class="hoverable_img_container">
-            <div class="hoverable_img_background"></div>
-            <img src="/media/images/chap_02_part_03/suttung.png" alt="Suttung"
-                data-parallax="-2">
-            <p class="img_info upper_left">This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info This is a serious info</p>
-        </div>
-
-    </main>
-
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

@@ -256,39 +256,44 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap1/part2">
+            <param name="onWheelDownLocation" value="/chap2">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_01_part_03/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_01_part_03/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap01_part03_livre01" src="/media/images/chap_01_part_03/livre_01.png" alt="Livre 1"
-                data-parallax="-5">
-            <img id="chap01_part03_livre02" src="/media/images/chap_01_part_03/livre_02.png" alt="Livre 2"
-                data-parallax="-3">
-            <img id="chap01_part03_livre03" src="/media/images/chap_01_part_03/livre_03.png" alt="Livre 3"
-                data-parallax="-2">
+            <div class="image_container layer">
+                <img id="chap01_part03_livre01" src="/media/images/chap_01_part_03/livre_01.png" alt="Livre 1"
+                    data-parallax="-5">
+                <img id="chap01_part03_livre02" src="/media/images/chap_01_part_03/livre_02.png" alt="Livre 2"
+                    data-parallax="-3">
+                <img id="chap01_part03_livre03" src="/media/images/chap_01_part_03/livre_03.png" alt="Livre 3"
+                    data-parallax="-2">
 
-            <img id="chap01_part03_moine" src="/media/images/chap_01_part_03/moine.png" alt="Moine"
-                data-parallax="-4">
-            <img id="chap01_part03_exploration" src="/media/images/chap_01_part_03/exploration.png" alt="Exploration"
-                data-parallax="5">
-        </div>
-
-        <div class="shadow layer"></div>
-
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 01</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">Le Savoir</p>
-                <p class="content_text">En effet Kvasir connaissait tout sur tout, et toute question qui lui était posée obtenait réponse. Fort de sa connaissance, Kvasir parcourut la terre des hommes, afin d’enseigner à ceux-ci la <span class="redtext">science</span>.</p>
+                <img id="chap01_part03_moine" src="/media/images/chap_01_part_03/moine.png" alt="Moine"
+                    data-parallax="-4">
+                <img id="chap01_part03_exploration" src="/media/images/chap_01_part_03/exploration.png" alt="Exploration"
+                    data-parallax="5">
             </div>
+
+            <div class="shadow layer"></div>
+
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 01</p>
+            </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">Le Savoir</p>
+                    <p class="content_text">En effet Kvasir connaissait tout sur tout, et toute question qui lui était posée obtenait réponse. Fort de sa connaissance, Kvasir parcourut la terre des hommes, afin d’enseigner à ceux-ci la <span class="redtext">science</span>.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-    </main>
-
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

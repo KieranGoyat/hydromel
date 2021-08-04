@@ -15,7 +15,6 @@
 }
 
 
-
 body {
     width: 100vw;
     height: 100vh;
@@ -424,13 +423,21 @@ body {
 
 
 /* MAIN */
-main {
+#main_container {
     position: relative;
 
     overflow: hidden;
 
     height: 100%;
     flex: 1;
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
 .layer {
@@ -566,13 +573,13 @@ img[data-parallax], div[data-parallax] {
 }
 
 
-.hoverable_img_container {
+/*.hoverable_img_container {
     z-index: 1;
 }
 
 .hoverable_img_container:hover {
     z-index: 2;
-}
+}*/
 
 .hoverable_img_container > img {
     height: 100%;

@@ -256,35 +256,40 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap2/part3">
+            <param name="onWheelDownLocation" value="/chap3/part1">
 
-        <div class="background layer" style="background-image: url('/media/images/intro_chap_03/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/intro_chap_03/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap03_arbre" src="/media/images/intro_chap_03/odin arbre.png" alt="Arbre"
-                data-parallax="-1">
-            <img id="chap03_dragon" src="/media/images/intro_chap_03/dragon.png" alt="Dragon"
-                data-parallax="5">
+            <div class="image_container layer">
+                <img id="chap03_arbre" src="/media/images/intro_chap_03/odin arbre.png" alt="Arbre"
+                    data-parallax="-1">
+                <img id="chap03_dragon" src="/media/images/intro_chap_03/dragon.png" alt="Dragon"
+                    data-parallax="5">
+            </div>
+
+            <div class="shadow layer"></div>
+
+            <div class="image_container layer">
+                <img id="chap03_gunnlod_odin" src="/media/images/intro_chap_03/gunnlod et odin.png" alt="Gunnlod et Odin"
+                    data-parallax="-3">
+            </div>
+
+            <div class="title layer">
+                <p class="title_number">CHAPITRE 3</p>
+                <p class="title_name">LA RUSE</br> D'ODIN</p>
+            </div>
+
         </div>
-
-        <div class="shadow layer"></div>
-
-        <div class="image_container layer">
-            <img id="chap03_gunnlod_odin" src="/media/images/intro_chap_03/gunnlod et odin.png" alt="Gunnlod et Odin"
-                data-parallax="-3">
-        </div>
-
-        <div class="title layer">
-            <p class="title_number">CHAPITRE 3</p>
-            <p class="title_name">LA RUSE</br> D'ODIN</p>
-        </div>
-
-    </main>
+    </div>
 
     <div id="rotate_your_screen">
         <p id="rotate_your_screen_text">Tourne ton écran<br>Grande Salope !!!</p>
     </div>
 
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

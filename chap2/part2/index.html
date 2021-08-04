@@ -256,38 +256,43 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap2/part1">
+            <param name="onWheelDownLocation" value="/chap2/part3">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_02_part_02/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_02_part_02/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap02_part02_abeille" src="/media/images/chap_02_part_02/abeille.png" alt="abeille"
-                data-parallax="8">
-            <img id="chap02_part02_druide" src="/media/images/chap_02_part_02/druide.png" alt="druide"
-                data-parallax="-3">
-            <img id="chap02_part02_fjalar_galar" src="/media/images/chap_02_part_02/fjalar et galar.png" alt="Fjalar et Galar"
-                data-parallax="4">
-            <img id="chap02_part02_suttung_pere" src="/media/images/chap_02_part_02/suttung's father.png" alt="Père de Suttung"
-                data-parallax="-3">
-            <img id="chap02_part02_suttung_mere" src="/media/images/chap_02_part_02/suutung's mother.png" alt="Mère de Suttung"
-                data-parallax="-4">
-        </div>
-
-        <div class="shadow layer"></div>
-
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 02</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">Le Mélange</p>
-                <p class="content_text">Fjalar et Galar ajoutèrent au sang du miel, et de ce mélange naquit l’<span class="redtext">hydromel poétique</span>, un breuvage qui donnait à quiconque en buvait, le don de poésie. Les 2 nains bien décidés à continuer leurs malices, assassinèrent un couple de géants ; noyant le mari, assommant la femme d’un coup de meule de moulin.</p>
+            <div class="image_container layer">
+                <img id="chap02_part02_abeille" src="/media/images/chap_02_part_02/abeille.png" alt="abeille"
+                    data-parallax="8">
+                <img id="chap02_part02_druide" src="/media/images/chap_02_part_02/druide.png" alt="druide"
+                    data-parallax="-3">
+                <img id="chap02_part02_fjalar_galar" src="/media/images/chap_02_part_02/fjalar et galar.png" alt="Fjalar et Galar"
+                    data-parallax="4">
+                <img id="chap02_part02_suttung_pere" src="/media/images/chap_02_part_02/suttung's father.png" alt="Père de Suttung"
+                    data-parallax="-3">
+                <img id="chap02_part02_suttung_mere" src="/media/images/chap_02_part_02/suutung's mother.png" alt="Mère de Suttung"
+                    data-parallax="-4">
             </div>
+
+            <div class="shadow layer"></div>
+
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 02</p>
+            </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">Le Mélange</p>
+                    <p class="content_text">Fjalar et Galar ajoutèrent au sang du miel, et de ce mélange naquit l’<span class="redtext">hydromel poétique</span>, un breuvage qui donnait à quiconque en buvait, le don de poésie. Les 2 nains bien décidés à continuer leurs malices, assassinèrent un couple de géants ; noyant le mari, assommant la femme d’un coup de meule de moulin.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-    </main>
-
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>

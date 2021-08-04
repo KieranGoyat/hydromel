@@ -256,37 +256,42 @@
 
     </nav>
 
-    <main id="main">
+    <div id="main_container" data-router-wrapper>
+        <div id="main" data-router-view="chap1-intro">
+            <param name="onWheelUpLocation" value="/chap3/part2">
+            <param name="onWheelDownLocation" value="/conclu">
 
-        <div class="background layer" style="background-image: url('/media/images/chap_03_part_03/bg.png');"></div>
+            <div class="background layer" style="background-image: url('/media/images/chap_03_part_03/bg.png');"></div>
 
-        <div class="image_container layer">
-            <img id="chap03_part03_aigle" src="/media/images/chap_03_part_03/odin aigle.png" alt="aigle"
-                data-parallax="5">
-            <img id="chap03_part03_valhalla" src="/media/images/chap_03_part_03/valhalla.png" alt="Valhalla"
-                data-parallax="2">
-            <img id="chap03_part03_tonneau1" src="/media/images/chap_03_part_03/tonneau_top.png" alt="tonneau"
-                data-parallax="-1">
-            <img id="chap03_part03_tonneau2" src="/media/images/chap_03_part_03/tonneau_bot.png" alt="tonneau"
-                data-parallax="-3">
-        </div>
-
-        <div class="shadow layer"></div>
-
-        <div class="layer part_name_container">
-            <p class="part_name">CHAPITRE 03</p>
-        </div>
-
-        <div class="layer content_container">
-            <div class="content">
-                <p class="content_title">Valhalla</p>
-                <p class="content_text">Odin, alors en possession de l’ensemble de l’hydromel, se transforma en <span class="redtext">aigle</span> et s’échappa de la montagne, pour au final régurgiter l’hydromel dans des grandes cuves placées au préalable.<br>
-                    Les dieux pouvaient désormais se délecter de la divine boisson. Les hommes les plus dignes pouvaient également espérer goûter à l’hydromel et ainsi devenir maître de l'<span class="redtext">art de la poésie</span>.</p>
+            <div class="image_container layer">
+                <img id="chap03_part03_aigle" src="/media/images/chap_03_part_03/odin aigle.png" alt="aigle"
+                    data-parallax="5">
+                <img id="chap03_part03_valhalla" src="/media/images/chap_03_part_03/valhalla.png" alt="Valhalla"
+                    data-parallax="2">
+                <img id="chap03_part03_tonneau1" src="/media/images/chap_03_part_03/tonneau_top.png" alt="tonneau"
+                    data-parallax="-1">
+                <img id="chap03_part03_tonneau2" src="/media/images/chap_03_part_03/tonneau_bot.png" alt="tonneau"
+                    data-parallax="-3">
             </div>
+
+            <div class="shadow layer"></div>
+
+            <div class="layer part_name_container">
+                <p class="part_name">CHAPITRE 03</p>
+            </div>
+
+            <div class="layer content_container">
+                <div class="content">
+                    <p class="content_title">Valhalla</p>
+                    <p class="content_text">Odin, alors en possession de l’ensemble de l’hydromel, se transforma en <span class="redtext">aigle</span> et s’échappa de la montagne, pour au final régurgiter l’hydromel dans des grandes cuves placées au préalable.<br>
+                        Les dieux pouvaient désormais se délecter de la divine boisson. Les hommes les plus dignes pouvaient également espérer goûter à l’hydromel et ainsi devenir maître de l'<span class="redtext">art de la poésie</span>.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-    </main>
-
+    <script src="/index.js"></script>
     <script src="/JS/parallax.js"></script>
     
 </body>
