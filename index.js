@@ -7,11 +7,12 @@ import GoDownTransition from '/JS/transitions/GoDownTransition';
 
 import Wheely from '/JS/Wheely';
 import Swipper from '/JS/Swipper';
+import Preloader from '/JS/Preloader';
 
 window.onload = init;
 
 function init(){
-  console.log("Hydromel V1.0.0.11");
+  console.log("Hydromel V1.0.0.12");
 
   //######## HIGHWAY CONF ##########################
   const H = new Highway.Core({
@@ -53,4 +54,10 @@ function init(){
     }
   })
   //######## SWIPPER INIT END ######################
+  
+  //######## PRELOAD ###############################
+  Preloader.init();
+  //######## PRELOAD END ###########################
+
+
 }

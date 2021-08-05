@@ -1,6 +1,7 @@
 // Import Highway
 import Highway from '@dogstudio/highway';
 import Wheely from '../../JS/Wheely';
+import Preloader from '../../JS/Preloader';
 
 // GSAP Library
 import gsap from 'gsap';
@@ -26,6 +27,7 @@ class GoUpTransition extends Highway.Transition {
 
   onComplete(from, to, done){
     from.remove();
+    Preloader.preload();
     done();
   }
 

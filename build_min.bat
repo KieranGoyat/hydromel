@@ -1,0 +1,1 @@
+call parcel build ./**/*.html --out-dir ../dist --cache-dir ../.cache-parcel

@@ -1,6 +1,7 @@
 // Import Highway
 import Highway from '@dogstudio/highway';
 import Wheely from '../../JS/Wheely';
+import Preloader from '../../JS/Preloader';
 
 // GSAP Library
 import gsap from 'gsap';
@@ -16,9 +17,15 @@ class GoDownTransition extends Highway.Transition {
 
     //from going up
     from.style.zIndex = 100;
-    gsap.fromTo(from, {top:0, zIndex:100}, {duration: animDuration, top:'-100%', onComplete: () => {from.remove();done();}});
+    gsap.fromTo(from, {top:0, zIndex:100}, {duration: animDuration, top:'-100%', onComplete: () => {this.onComplete(from, to, done);}});
     //gsap.fromTo(to,   {top:'100%'}, {duration: animDuration, top:'0%', onComplete: done});
 
+  }
+
+  onComplete(from, to, done){
+    from.remove();
+    Preloader.preload();
+    done();
   }
 
   out({ from, done }) {
